@@ -4,6 +4,7 @@ public class PrinterTest {
 
 	public static void main(String[] args) {
 		Printer printer = new Printer();
+		//오버로딩문제
 
 		printer.println( 10 );
 		printer.println( true );
