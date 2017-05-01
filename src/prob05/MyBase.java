@@ -1,5 +1,17 @@
 package prob05;
 
 public class MyBase extends Base {
-	//오직 이 클래스만 수정해 오버라이딩을 통해 출력을 일치시키시오. 부분재구현(super)도 사용해서 하세요.
+	public void service(String state) {
+		if(state.equals("낮"))
+			day();
+		else if (state.equals("밤"))
+			night();
+		else if (state.equals("오후"))
+			System.out.println("오후도 낮과 마찬가지로 일해야 합니다.");
+	}
+	
+	public void day() {
+		System.out.println("낮에는 열심히 일하자!");
+	}
+	
 }
